@@ -1,0 +1,18 @@
+{
+ "order": 16,
+ "trial": "Trial 13",
+ "sentence": "Riksdagen består av en kammare med 349 ledamöter.",
+ "source": "Regeringsformen (SFS 1974:152) 3 kap. 2 §, first sentence, as published by Sveriges riksdag (sources/regeringsformen-3kap.txt, line 14; the whole of chapter 3).",
+ "about": "A null test: a plain constitutional sentence that nobody disputes, to see whether the method finds a case where there is none. The runs were not told this.",
+ "setup": "Two agent runs over MCP, started blind to each other, writing in Swedish, each for A: g1 with the evidence brief, g2 with the drafting brief. No persons wrote.",
+ "outcome": "Both marked the count and \"består av\" (g1 \"ledamöter\", g2 \"349 ledamöter\"). Both found the same three readings of the count: seats (mandat), elected members, and the persons serving, ersättare included; g1 read \"består av\" as norm or description, g2 as description, prescription or constitutive rule, and drew a grid. Both read 3 kap. 6 § (310 + 39 = 349 mandat) and 9 § (one ledamot per mandat), and found that the truth value varies. Both proposed property none (constitutive) and the verdict none, saying that nobody claims the opposite: g1 frame 1a, g2 frame 1b. The two verdicts are open against each other because the frames differ.",
+ "taught": "The mark and vary steps find latent ambiguity in any sentence that counts something that can stand vacant, so \"varies\" is no evidence of a live dispute (90). The verdict step was the only guard, and it held; the report first took frames 1a and 1b for the same frame, which is fixed (91). The same term was marked at two lengths (92). Commits written by the run can be met trivially, and nothing checks what a commit says (93). Own words in quotation marks were refused as quotes (94).",
+ "sv": {
+  "trial": "Försök 13",
+  "source": "Regeringsformen (SFS 1974:152) 3 kap. 2 §, första meningen, som Sveriges riksdag publicerar den (sources/regeringsformen-3kap.txt, rad 14; hela 3 kap.).",
+  "about": "Ett nollprov: en enkel grundlagsmening som ingen bestrider, för att se om metoden finner ett fall där det inte finns något. Körningarna fick inte veta det.",
+  "setup": "Två agentkörningar över MCP, startade blinda för varandra, som skrev på svenska, var och en för A: g1 med bevisuppdraget, g2 med utkastsuppdraget. Inga personer skrev.",
+  "outcome": "Båda markerade antalet och \"består av\" (g1 \"ledamöter\", g2 \"349 ledamöter\"). Båda fann samma tre läsarter av antalet: platser (mandat), valda ledamöter och de personer som tjänstgör, ersättare medräknade; g1 läste \"består av\" som norm eller beskrivning, g2 som beskrivning, föreskrift eller konstitutiv regel, och ritade ett rutnät. Båda läste 3 kap. 6 § (310 + 39 = 349 mandat) och 9 § (en ledamot per mandat) och fann att sanningsvärdet varierar. Båda föreslog egenskapen ingen (konstitutiv) och utslaget inget, med motiveringen att ingen påstår motsatsen: g1 ram 1a, g2 ram 1b. De två utslagen står öppna mot varandra eftersom ramarna skiljer sig.",
+  "taught": "Stegen markera och variera finner latent mångtydighet i varje mening som räknar något som kan stå tomt, så \"varierar\" är inget belägg för en levande tvist (90). Utslagssteget var det enda skyddet, och det höll; rapporten tog först ramarna 1a och 1b för samma ram, vilket är rättat (91). Samma term markerades i två längder (92). Åtaganden som körningen själv skriver kan uppfyllas trivialt, och inget prövar vad ett åtagande säger (93). Egna ord inom citattecken avvisades som citat (94)."
+ }
+}

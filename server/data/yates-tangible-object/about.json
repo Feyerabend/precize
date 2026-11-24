@@ -1,0 +1,10 @@
+{
+ "order": 10,
+ "trial": "Trials 8 and 8′",
+ "sentence": "Whoever knowingly alters, destroys, mutilates, conceals, covers up, falsifies, or makes a false entry in any record, document, or tangible object with the intent to impede, obstruct, or influence the investigation … shall be fined under this title, imprisoned not more than 20 years, or both.",
+ "source": "18 U.S.C. §1519, a US law against destroying evidence, and Yates v. United States (2015). A fisherman, told by a federal officer to keep undersized fish for inspection, had them thrown overboard. Is a fish a \"tangible object\"? Statute and opinions are public domain.",
+ "about": "Read as ordinary words, a fish is plainly a tangible object. Read beside \"record\" and \"document\", and under a caption about records, it may mean only things that record or preserve information. The Supreme Court split: four justices read it narrowly, one concurred on other grounds, four read it broadly.",
+ "setup": "Two agent runs on two different models (Opus and Sonnet), given the statute first and the opinions only after a commit that had to state anything they already knew about the case. Both knew it. After they handed over, two fictional persons wrote: a prosecutor and defence counsel.",
+ "outcome": "Both runs proposed verdict 2, real disagreement: the opinions agree on the facts and on what each reading says, and differ on which reading the law bears. Defence counsel adopted that; the prosecutor gave 4, saying the narrow reading fails the very thing the law protects.",
+ "taught": "Prior knowledge can be put on the record but not removed (58). Two models agree, both knowing the case (59). Reads outside the server are invisible (60). A person can adopt the proposal (61). A real case gives real verdicts (62)."
+}

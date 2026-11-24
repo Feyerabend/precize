@@ -1,0 +1,18 @@
+{
+ "C (fictional prosecutor)": {
+  "key": "26ac12114fd0ca1e42ca2fc16ba4038f534a818c419414057646402670da5368",
+  "kind": "person"
+ },
+ "D (fictional defence counsel)": {
+  "key": "e8b761fe385058a31eaf424d0fa6a80d865cf0e8d27658acb533b76848ab295a",
+  "kind": "person"
+ },
+ "g1 (for A)": {
+  "key": "b432e8685975bd37ce2af202da21b02988dc250674371da9bccc24125cb00b06",
+  "kind": "agent"
+ },
+ "g2 (for A)": {
+  "key": "7bb7e31722502e04230dfa78b219ccf17bfa64683cd2b78f1554cf7584860fee",
+  "kind": "agent"
+ }
+}

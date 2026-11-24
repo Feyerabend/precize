@@ -1,0 +1,18 @@
+{
+ "A (author)": {
+  "key": "1be4c7b562628fc7a1030311fc1f27e976b7be32c7a5327737d895715522d83b",
+  "kind": "person"
+ },
+ "E (fictional author)": {
+  "key": "e00d02c85f1a51b9bae82dc94ccdc4e2a673de9f7026caed6e759fc653c41a93",
+  "kind": "person"
+ },
+ "F (fictional reviewer)": {
+  "key": "ab59be67a512ecd45aab032e1baacecc7ec8e65dd7034bc237df15dfbd2a0a75",
+  "kind": "person"
+ },
+ "g1 (for A)": {
+  "key": "126d7442462cccfe103235131d853ff2e0665e58016011c148235057b2e92e3c",
+  "kind": "agent"
+ }
+}

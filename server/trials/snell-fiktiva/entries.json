@@ -1,0 +1,128 @@
+{
+ "_note": "Two fictional persons in the audit of \"Insured performs landscaping.\" (Snell v. United Specialty, 11th Cir. 2024), after runs g1, g2 and g3 closed. Their stances are stipulated, not anyone's judgement, and not the parties' or their counsel's. They write independently: neither cites the other. The holders they name are the insured and the courts as the opinion of the Court reports them, cited by line. Each counsel builds on the run that suits the side: G on g3 (verdict 2), H on g2 (verdict 4, and P4, the policy read with the application, which only g2 wrote). The letters G and H are new: A-F are personas of earlier trials or the real author.",
+ "G (fictional counsel for the insured)": [
+  {
+   "id": "l1",
+   "act": "look",
+   "rests": [
+    "g3 (for A):l1",
+    "g3 (for A):l2"
+   ],
+   "sources": [
+    "sources/snell-v-united-specialty-2024.txt, lines 80-90",
+    "sources/snell-v-united-specialty-2024.txt, lines 395-399",
+    "sources/snell-v-united-specialty-2024.txt, lines 440-446",
+    "sources/snell-v-united-specialty-2024.txt, lines 484-488"
+   ],
+   "body": "Fictional person G, counsel for the insured (stipulated stance). The site work was excavation of a pit, drainage, and concrete block retaining walls with a wood cap, the walls to prevent erosion and collapse (lines 80-90). The insured says the district court ignored the plain meaning of undefined terms like \"landscaping\" (lines 395-399), and the opinion reports that he claims the site work is \"landscaping\" (lines 484-488). The Court took the term as ambiguous and construed it in his favour (lines 440-446)."
+  },
+  {
+   "id": "h1",
+   "act": "holder",
+   "object": "g3 (for A):P2",
+   "value": "Snell, the insured, as the opinion of the Court reports him (lines 484-488)",
+   "rests": [
+    "l1",
+    "g3 (for A):P2"
+   ],
+   "body": "Fictional person G. The grounds reading, with the retaining walls and their cap but not the assembly of the trampoline, is the insured's (lines 484-488)."
+  },
+  {
+   "id": "h2",
+   "act": "holder",
+   "object": "g3 (for A):P1",
+   "value": "the district court (lines 224-233)",
+   "rests": [
+    "g3 (for A):l1"
+   ],
+   "body": "Fictional person G. The horticultural reading is the district court's: it found that the common, everyday meaning did not include trampoline installation (lines 224-233)."
+  },
+  {
+   "id": "vd1",
+   "act": "verdict",
+   "object": "g3 (for A):q1",
+   "value": "2",
+   "rests": [
+    "g3 (for A):vd1",
+    "l1",
+    "h1",
+    "h2"
+   ],
+   "body": "Fictional person G: the audit's verdict is 2, real disagreement, as g3 proposed. The insured and the district court agree on what was done and differ on which reading the endorsement carries; nothing in the policy defines the word. An ambiguity in an insurance contract is read for the insured, and the Court did so (l1). The application is a separate clause of the contract, not a reading of \"landscaping\", so a reading that takes it in (g2:P4) answers another question. I adopt g3:vd1."
+  },
+  {
+   "id": "l2",
+   "act": "look",
+   "sources": [
+    "sources/snell-v-united-specialty-2024.txt, lines 440-446"
+   ],
+   "answers": [
+    {
+     "ref": "g2 (for A):P4",
+     "disputes": true
+    }
+   ],
+   "body": "Fictional person G. P4 is not a reading of \"landscaping\". The Court says it need not resolve whether the site work was landscaping, takes the term as ambiguous and construes it for the insured, and decides on the application (lines 440-446). The application excludes the work from coverage whatever the word means; it does not make the word mean less."
+  },
+  {
+   "id": "close",
+   "act": "close",
+   "body": "Fictional person G closes. Written without reading H."
+  }
+ ],
+ "H (fictional counsel for the insurer)": [
+  {
+   "id": "l1",
+   "act": "look",
+   "rests": [
+    "g2 (for A):pr1",
+    "g2 (for A):P4"
+   ],
+   "sources": [
+    "sources/snell-v-united-specialty-2024.txt, lines 198-201",
+    "sources/snell-v-united-specialty-2024.txt, lines 452-463",
+    "sources/snell-v-united-specialty-2024.txt, lines 484-488"
+   ],
+   "body": "Fictional person H, counsel for the insurer (stipulated stance). The application asked whether the insured did any recreational or playground equipment construction or erection, and he checked \"No\" (lines 198-201). Had he answered yes, the insurer could have added the coverage and adjusted the rate (lines 452-463). Taking the application as part of the policy, the Court held that he disclaimed the sort of work he did, the site work included (lines 484-488)."
+  },
+  {
+   "id": "h1",
+   "act": "holder",
+   "object": "g2 (for A):P4",
+   "value": "the Court of Appeals (lines 484-488)",
+   "rests": [
+    "l1",
+    "g2 (for A):P4"
+   ],
+   "body": "Fictional person H. The reading of the policy read whole with the application is the Court's (lines 484-488)."
+  },
+  {
+   "id": "h2",
+   "act": "holder",
+   "object": "g2 (for A):P1",
+   "value": "the district court (lines 224-233)",
+   "rests": [
+    "g2 (for A):l1"
+   ],
+   "body": "Fictional person H. The horticultural reading is the district court's (lines 224-233)."
+  },
+  {
+   "id": "vd1",
+   "act": "verdict",
+   "object": "g2 (for A):q1",
+   "value": "4",
+   "rests": [
+    "g2 (for A):vd1",
+    "g2 (for A):pr1",
+    "l1",
+    "h1"
+   ],
+   "body": "Fictional person H: the audit's verdict is 4, rule-property divergence, as g2 proposed. Read the word alone on the grounds reading, and the site work falls within the endorsement. Ask the property (g2:pr1): was this job a risk the insurer underwrote? No; the insured disclaimed it, and the rate was set on that answer (l1). The word read alone gives the wrong answer about the thing the endorsement exists to track. Read with the application (P4), rule and property agree. I adopt g2:vd1."
+  },
+  {
+   "id": "close",
+   "act": "close",
+   "body": "Fictional person H closes. Written without reading G."
+  }
+ ]
+}

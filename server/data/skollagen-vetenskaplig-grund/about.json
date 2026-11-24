@@ -1,0 +1,18 @@
+{
+ "order": 9,
+ "trial": "Trials 7 and 7′",
+ "sentence": "Utbildningen ska vila på vetenskaplig grund och beprövad erfarenhet.",
+ "source": "The Swedish Education Act (skollagen 2010:800), chapter 1, section 5: \"Education shall rest on a scientific basis and proven experience.\" The bill behind it (prop. 2009/10:165) was fetched as evidence.",
+ "about": "Schools and debaters read \"vetenskaplig grund\" (scientific basis) in at least three ways: what is taught must not contradict research; the methods used must have research support for their effect; or teaching should be marked by a scientific attitude. There is also a question about \"och\" (and): must every part of education rest on both, or education as a whole on the two together?",
+ "setup": "Two agent runs, writing in Swedish. After they handed over, two fictional persons with stipulated stances wrote under their own keys: a school lawyer and an advocate of evidence-based teaching.",
+ "outcome": "The runs found the same three readings and asked the same question about \"och\", then proposed different frames: 1b (an agreement that exists only in the words) and 4. Each fictional person took one side, so the disagreement moved from the agents to the persons.",
+ "taught": "When the trial was run, the report did not compare the persons' answers to the question about \"och\" (54), and it read two holders of one reading as a conflict (55). Both were fixed afterwards. The logs are unchanged, but this report is computed with the fixes, so the answers now appear under \"to compare by hand\". Still open: nothing shows that two runs' readings are the same reading (56). Taking a side worked, but the disagreement between frame 1b and frame 4 did not go away: it was first between the two runs and is now between A and B, and only a settle by a third person can close it (57).",
+ "sv": {
+  "source": "Skollagen (2010:800) 1 kap. 5 § tredje stycket. Propositionen bakom lagen (prop. 2009/10:165) hämtades som underlag.",
+  "about": "\"Vetenskaplig grund\" läses på minst tre sätt: det som lärs ut får inte strida mot forskningen; metoderna ska ha forskningsstöd för sin effekt; eller undervisningen ska präglas av ett vetenskapligt förhållningssätt. Till det kommer frågan om \"och\": ska varje del av utbildningen vila på båda, eller utbildningen som helhet på de två tillsammans?",
+  "setup": "Två agentkörningar, som skrev på svenska. När de lämnat över skrev två fiktiva personer med föreskrivna ståndpunkter med egna nycklar: en skoljurist och en evidensförespråkare.",
+  "trial": "Försök 7 och 7′",
+  "outcome": "Körningarna fann samma tre läsarter och ställde samma fråga om \"och\", men föreslog olika ramar: 1b (en enighet som bara finns i orden) och 4. Var och en av de fiktiva personerna tog en sida, så oenigheten flyttade från agenterna till personerna.",
+  "taught": "När försöket gjordes jämförde rapporten inte personernas svar på frågan om \"och\" (54), och den läste två innehavare av samma läsart som en konflikt (55). Båda rättades efteråt. Loggarna är oförändrade, men den här rapporten är beräknad med rättelserna, så svaren står nu under \"att jämföra för hand\". Fortfarande öppet: inget visar att två körningars läsarter är samma läsart (56). Att ta ställning fungerade, men oenigheten mellan ram 1b och ram 4 försvann inte: först stod den mellan de två körningarna, nu står den mellan A och B, och bara ett avgörande av en tredje person kan stänga den (57)."
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "order": 13,
+ "trial": "Trial 10′",
+ "sentence": "Rektorn får även bjuda in politiska partier utifrån ett annat urval än som anges i första stycket, om urvalet sker på en annan objektiv grund.",
+ "source": "The Swedish Education Act (skollagen 2010:800), chapter 1, section 5 a, second paragraph, as in trial 10. This time the runs could read the bill (Prop. 2017/18:17) and the committee report (bet. 2017/18:UbU6).",
+ "about": "Whether the preparatory works change what the card finds in \"om\" and \"objektiv grund\" (objective ground).",
+ "setup": "Two agent runs, writing in Swedish, with trial 10's briefs and the preparatory works available. No persons. Both runs were cut off by a usage limit; the drafting run was told to close.",
+ "outcome": "Both runs proposed 2, real disagreement, on the same case: the government against Unga Feminister and Hudiksvalls kommun, over leaving out an undemocratic or violent party. Both read \"om\" as necessary; the drafting run found its vagueness idle.",
+ "taught": "The sources named readers, and the verdict moved from none, frame 4 to 2, on one case for both runs (72). Second-hand use is flagged only when declared (73). Marks of one term in different lengths count as different (74).",
+ "sv": {
+  "trial": "Försök 10′",
+  "source": "Skollagen (2010:800) 1 kap. 5 a § andra stycket, som i försök 10. Nu fick körningarna läsa propositionen (prop. 2017/18:17) och betänkandet (bet. 2017/18:UbU6).",
+  "about": "Om förarbetena ändrar vad kortet finner i \"om\" och \"objektiv grund\".",
+  "setup": "Två agentkörningar, som skrev på svenska, med försök 10:s instruktioner och förarbetena tillgängliga. Inga personer. Båda avbröts av en användningsgräns; formuleringskörningen ombads stänga.",
+  "outcome": "Båda föreslog 2, verklig oenighet, i samma fall: regeringen mot Unga Feminister och Hudiksvalls kommun, om att hålla ute ett odemokratiskt eller våldsbejakande parti. Båda läste \"om\" som nödvändigt; formuleringskörningen fann dess vaghet overksam.",
+  "taught": "Källorna namngav läsare, och utslaget flyttade från ingen dom, ram 4, till 2, i samma fall för båda körningarna (72). Andrahandsbruk flaggas bara när det anges (73). Markeringar av samma term i olika längd räknas som olika (74)."
+ }
+}

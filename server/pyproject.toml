@@ -1,0 +1,10 @@
+[project]
+name = "mcp-audit"
+version = "0.1.0"
+description = "An audit record after Saying What You Mean: logs, cites, cascade, reports"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

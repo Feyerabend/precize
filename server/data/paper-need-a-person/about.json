@@ -1,0 +1,18 @@
+{
+ "order": 14,
+ "trial": "Trials 11 and 11′",
+ "sentence": "Some steps in the procedure need a person.",
+ "source": "The draft paper itself, §1 (paper/who-saw-what.md, line 50), the sentence after \"Who decided?\".",
+ "about": "Whether the card can read the paper's own claim, and whether nescio and decide work on a sentence whose holder is known. \"Need\" may mean assigned by rule, constitutive, a matter of capability, of accountability, or of mechanism; \"a person\" any human, the person concerned, a named signer, or a body; \"Some\" at least one, some but not all, or the steps listed next.",
+ "setup": "One agent run over MCP, writing in English. After it closed, two fictional persons with stipulated stances wrote by script under their own keys, outside the server: E, the author, and F, a reviewer. The letters are new; the agent's log keeps the name it was given for A, the real author, before the trial was turned to personas.",
+ "outcome": "The run found twelve readings, a truth value that varies under each mark, and proposed none, frame 3. E goes by S3, says nescio between P2 and P4 and decides P4, and says nescio between R2 and R3, left open. F says E goes by P2. The report shows P4 as chosen, not found; R2/R3 as not decided; and F's claim open against E's nescio.",
+ "taught": "A second init overwrote the key (76) and example commands were run as written (77), before any persona. A holder's claims about different marks opposed each other (78), and the form \"E goes by P2\" was flagged loose (79); all three were fixed. A decide does not close a claim about what was meant (80). The personas are the author's script, which is the divergence the run named in its own property entry (81).",
+ "sv": {
+  "trial": "Försök 11 och 11′",
+  "source": "Utkastet till artikeln självt, avsnitt 1 (paper/who-saw-what.md, rad 50), meningen efter \"Who decided?\".",
+  "about": "Om kortet kan läsa artikelns eget påstående, och om nescio och beslut fungerar på en mening vars innehavare är känd. \"Need\" kan betyda tilldelat genom regel, konstitutivt, en fråga om förmåga, om ansvar eller om mekanism; \"a person\" vilken människa som helst, den det gäller, en namngiven undertecknare eller ett organ; \"Some\" minst ett, några men inte alla, eller de steg som räknas upp härnäst.",
+  "setup": "En agentkörning över MCP, som skrev på engelska. När den stängt skrev två fiktiva personer med föreskrivna ståndpunkter med skript och egna nycklar, utanför servern: E, författaren, och F, en granskare. Bokstäverna är nya; agentens logg behåller namnet den fick för A, den verkliga författaren, innan försöket gjordes om till personer.",
+  "outcome": "Körningen fann tolv läsarter, ett sanningsvärde som varierar under varje markering, och föreslog inget, ram 3. E håller S3, svarar nescio mellan P2 och P4 och beslutar P4, och svarar nescio mellan R2 och R3, som lämnas öppet. F säger att E håller P2. Rapporten visar P4 som vald, inte funnen; R2/R3 som inte beslutade; och F:s påstående öppet mot E:s nescio.",
+  "taught": "En andra init skrev över nyckeln (76) och exempelkommandon kördes som de stod (77), före alla personer. En innehavares påståenden om olika markeringar ställdes mot varandra (78), och formen \"E håller P2\" flaggades som lös (79); alla tre rättades. Ett beslut stänger inte ett påstående om vad som menades (80). Personerna är författarens skript, vilket är den avvikelse körningen själv nämnde i sin egenskapspost (81)."
+ }
+}

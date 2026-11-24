@@ -1,0 +1,10 @@
+{
+ "order": 8,
+ "trial": "Trial 6c",
+ "sentence": "Patients who demonstrated adequate adherence during the initial phase showed clinically meaningful improvement at the six-month follow-up",
+ "source": "The third sentence from the same AI-generated answer, about no known study.",
+ "about": "\"Adequate adherence\" picks out which patients the claim is about. If \"adequate\" is set after seeing who improved, the sentence is true by construction and says nothing.",
+ "setup": "Two agent runs.",
+ "outcome": "Both found no verdict. One found the sentence circular under two of its readings; the other named frame 4.",
+ "taught": "A sentence about nothing has no truth value to vary (50). The circularity is an example of what the audits found in the sentences themselves (52)."
+}

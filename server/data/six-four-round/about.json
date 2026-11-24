@@ -1,0 +1,10 @@
+{
+ "order": 3,
+ "trial": "Trial 4",
+ "sentence": "Powerful AI systems can go rogue.",
+ "source": "The same worked case as trial 3, run again after the fixes that trial forced.",
+ "about": "This time the runs marked \"go rogue\" itself. The two readings in circulation are \"acted against its objective\" and \"merely surprised its operators\".",
+ "setup": "Two agent runs, as in trial 3, after the fix round. No person wrote.",
+ "outcome": "Both proposed verdict 5, pseudo-alternatives: the two readings are offered as if they were all the options, and the incident fits neither.",
+ "taught": "Kept short in the paper. Its main lesson is negative: the runs had seen the answer, which is why later trials used sentences nobody had audited (33)."
+}

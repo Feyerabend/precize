@@ -1,0 +1,21 @@
+# private keys and fetch ledgers: never in the repository
+.keys/
+.fetched/
+keys-local/
+*.pem
+
+# source texts the server reads from; supply your own
+/sources/
+
+# local settings, environments, rendered reports
+.mcp.json
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+server/out/
+server/out-sv/
+
+# LaTeX written by the renderer: made from the logs, not kept
+*.tex

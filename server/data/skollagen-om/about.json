@@ -1,0 +1,18 @@
+{
+ "order": 12,
+ "trial": "Trial 10",
+ "sentence": "Rektorn får även bjuda in politiska partier utifrån ett annat urval än som anges i första stycket, om urvalet sker på en annan objektiv grund.",
+ "source": "The Swedish Education Act (skollagen 2010:800), chapter 1, section 5 a, second paragraph: \"The head teacher may also invite political parties on a selection other than that given in the first paragraph, if the selection is made on another objective ground.\" Run after the server was told that \"if\" can be marked (finding 68).",
+ "about": "The word \"om\" (if) can mean that an objective ground is enough for the selection to be allowed, that it is the only way, or that it brings the permission about. \"Objektiv grund\" (objective ground) is vague as well.",
+ "setup": "Two agent runs, writing in Swedish, with trial 7's briefs, which name no term. No persons.",
+ "outcome": "Both runs marked \"objektiv grund\" and \"om\" and listed enough, only if and a consequence; the evidence run added necessary but not sufficient, and found that the paragraph's structure rules out enough and a consequence. Both proposed the same verdict: none, frame 4.",
+ "taught": "The new instructions were followed (70). The evidence run wrote its readings of \"om\" only in the mark's body, where no holder or verdict can name them; the report now flags such a mark (69). The verdicts agree in value but rest on different cases, and the readings left standing differ; the report shows the agreement, not the difference (71).",
+ "sv": {
+  "trial": "Försök 10",
+  "source": "Skollagen (2010:800) 1 kap. 5 a § andra stycket. Kört sedan servern fått veta att \"om\" kan markeras (fynd 68).",
+  "about": "\"Om\" kan betyda att en objektiv grund räcker för att urvalet ska vara tillåtet, att den är den enda vägen, eller att den medför tillåtelsen. Även \"objektiv grund\" är vag.",
+  "setup": "Två agentkörningar, som skrev på svenska, med försök 7:s instruktioner, som inte nämner någon term. Inga personer.",
+  "outcome": "Båda körningarna markerade \"objektiv grund\" och \"om\" och angav tillräckligt, endast om och följd; evidenskörningen lade till nödvändigt men inte tillräckligt och fann att paragrafens uppbyggnad utesluter tillräckligt och följd. Båda föreslog samma utslag: ingen dom, ram 4.",
+  "taught": "De nya instruktionerna följdes (70). Evidenskörningen skrev sina läsningar av \"om\" bara i markeringens text, där ingen innehavare eller dom kan namnge dem; rapporten flaggar nu en sådan markering (69). Utslagen är lika till värdet men vilar på olika fall, och de läsningar som står kvar skiljer sig; rapporten visar enigheten, inte skillnaden (71)."
+ }
+}

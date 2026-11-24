@@ -1,0 +1,10 @@
+{
+ "order": 6,
+ "trial": "Trial 6a",
+ "sentence": "All user-uploaded documents are sanitized before ingestion into the vector database, ensuring sensitive internal data cannot leak across tenant boundaries.",
+ "source": "One of three sentences from a single AI-generated answer in a web search, about no known system. The prompt is unknown.",
+ "about": "The guarantee hangs on \"sanitized\". If it means stripping scripts and macros, it says nothing about one customer's data reaching another. If it means redacting sensitive content, it may say too much.",
+ "setup": "Two agent runs per sentence, after the fixes from trial 5.",
+ "outcome": "Both runs found no verdict, since there is no case and no system. They named different frames: 3, equivocation, and 4, rule–property divergence. Both found the same gap: sanitizing a document is not the same as keeping tenants apart.",
+ "taught": "An AI speaker has no reading to ask for (49). Frames inside \"none\" needed to be compared (47)."
+}

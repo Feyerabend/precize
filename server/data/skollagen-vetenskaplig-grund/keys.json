@@ -1,0 +1,18 @@
+{
+ "A (fiktiv skoljurist)": {
+  "key": "628cf0ee88921fed1a56d7f2e68f1e0636a4bacaf1915049259b421bbc542176",
+  "kind": "person"
+ },
+ "B (fiktiv evidensf\u00f6respr\u00e5kare)": {
+  "key": "1c0913c9431bd3ffd330f7b10b48bc6eb3473155f160512c52df2cf30ac08994",
+  "kind": "person"
+ },
+ "g1 (for A)": {
+  "key": "d455e9ac0887ddcb844d5afe75907f2495fd2ea95d082a3e94ba5292ae3c2e23",
+  "kind": "agent"
+ },
+ "g2 (for A)": {
+  "key": "b19f76dc24fc64b5fd5a9a44d6c43f9e7490b4edcaf030e9876447b6a6a461df",
+  "kind": "agent"
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "order": 5,
+ "trial": "Trial 5b",
+ "sentence": "Organizations should establish policies and procedures to ensure that AI systems are sufficiently transparent and explainable…",
+ "source": "A governance norm of the kind found in many AI policy documents, given by the author. Its origin is unknown.",
+ "about": "The norm turns on \"sufficiently\". Whether an organization complies depends on where that threshold sits, and the sentence gives almost nothing to fix it.",
+ "setup": "Two agent runs, as for Wood and Porter.",
+ "outcome": "Neither run reached a verdict. A norm is not true or false, and with no known origin there is nobody to ask which reading they mean.",
+ "taught": "Where the card does not fit: a norm has no truth value (40), and an unknown origin empties the steps that ask for speakers and parties (41)."
+}

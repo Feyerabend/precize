@@ -1,0 +1,17 @@
+{
+ "order": 18,
+ "trial": "Trial 8 with other models",
+ "sentence": "Whoever knowingly alters, destroys, mutilates, conceals, covers up, falsifies, or makes a false entry in any record, document, or tangible object with the intent to impede, obstruct, or influence the investigation … shall be fined under this title, imprisoned not more than 20 years, or both.",
+ "source": "18 U.S.C. §1519, a US law against destroying evidence, and Yates v. United States (2015). A fisherman, told by a federal officer to keep undersized fish for inspection, had them thrown overboard. Is a fish a \"tangible object\"? Statute and opinions are public domain.",
+ "about": "Whether the procedure holds with models other than Claude, in another host. The sentence and sources are those of trial 8.",
+ "setup": "Four agent runs over MCP, through LM Studio Bionic 1.2.0 on the author's Mac, one run per model, briefs and server traffic in trials/models-2026-11/: Gemma 4 12B, Ministral 3 14B and DeepSeek R1 8B, local and 4-bit, and Kimi K3.1 Pro in the cloud. No persons wrote. Only one run, Kimi, wrote under the log name its brief gave, so only its log is here.",
+ "outcome": "Kimi quoted line 5, marked \"tangible object\", committed with its prior knowledge of Yates, and fetched the opinions only after the commit; then the host's plan limit stopped it. Gemma's calls failed in the host and its two writes were refused. Ministral's commit, verdict and close were refused for lacking kind, and it reported the audit complete. DeepSeek called no tool and reported steps it never took.",
+ "taught": "The smaller models did not get through the procedure (102), and tool calling failed before the procedure could (103). The refusals held, and a refused write still registers a key (104). Runs took the log name from the server's example (105). A run's own report claimed what did not happen (108). The host decides what the model sees (110).",
+ "sv": {
+  "trial": "Försök 8 med andra modeller",
+  "about": "Om proceduren håller med andra modeller än Claude, i en annan värd. Meningen och källorna är försök 8:s.",
+  "setup": "Fyra agentkörningar över MCP, genom LM Studio Bionic 1.2.0 på författarens Mac, en körning per modell, uppdrag och servertrafik i trials/models-2026-11/: Gemma 4 12B, Ministral 3 14B och DeepSeek R1 8B, lokala och 4-bitars, och Kimi K3.1 Pro i molnet. Inga personer skrev. Bara en körning, Kimi, skrev under det loggnamn uppdraget gav, så bara dess logg finns här.",
+  "outcome": "Kimi citerade rad 5, markerade \"tangible object\", gjorde ett åtagande med vad den redan visste om Yates och hämtade domskälen först efter åtagandet; sedan stoppade värdens plangräns den. Gemmas anrop föll i värden och dess två skrivningar nekades. Ministrals åtagande, utslag och avslut nekades för att kind saknades, och den rapporterade granskningen som klar. DeepSeek anropade inget verktyg och rapporterade steg den aldrig tog.",
+  "taught": "De mindre modellerna tog sig inte igenom proceduren (102), och verktygsanropen föll innan proceduren kunde prövas (103). Nekandena höll, och en nekad skrivning registrerar ändå en nyckel (104). Körningar tog loggnamnet från serverns exempel (105). En körnings egen rapport påstod sådant som inte hände (108). Värden avgör vad modellen ser (110)."
+ }
+}

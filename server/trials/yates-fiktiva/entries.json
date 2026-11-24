@@ -1,0 +1,40 @@
+{
+  "_note": "Two fictional persons in the audit of 18 U.S.C. 1519, 'tangible object', after the hand-over of runs g1 (Opus) and g2 (Sonnet). Their stances are stipulated, not anyone's judgement. They write independently: neither cites the other's entries. The holders they name are the opinions themselves, cited by line. Readings follow g1: P1 physical thing, P2 records information, P4 similar to records (the concurrence).",
+  "C (fictional prosecutor)": [
+    {"id": "l1", "act": "look",
+     "rests": ["g1 (for A):pr1", "g2 (for A):pr1"],
+     "sources": ["sources/yates-v-us-2015.txt, lines 9-9", "sources/yates-v-us-2015.txt, lines 43-43", "sources/yates-v-us-2015.txt, lines 127-127"],
+     "body": "Fictional person C, a federal prosecutor (stipulated stance). The officer singled out the undersized fish and told the captain to keep them apart until port (line 9). They were thrown overboard so that the fish later measured would not be the ones he had found (line 43). The fish were the evidence of the offence under investigation, and nothing else could have shown it. The dissent reads 'any' tangible object as a tangible object 'of whatever kind' (line 127)."},
+    {"id": "h1", "act": "holder", "object": "g1 (for A):p1", "value": "Kagan, J., dissenting, for four Justices",
+     "rests": ["l1", "g1 (for A):l3"],
+     "body": "Fictional person C. The physical-thing reading is held by the dissent (lines 120-122)."},
+    {"id": "h2", "act": "holder", "object": "g1 (for A):p2", "value": "Ginsburg, J., plurality, for four Justices",
+     "rests": ["g1 (for A):l1"],
+     "body": "Fictional person C. The record-keeping reading is held by the plurality (line 38)."},
+    {"id": "vd1", "act": "verdict", "object": "g1 (for A):q1", "value": "4",
+     "rests": ["l1", "h1", "h2", "g1 (for A):pr1", "g1 (for A):p2"],
+     "body": "Fictional person C: the audit's verdict is 4, rule-property divergence. Apply P2 faithfully and correctly: a fish records nothing, so the captain is outside the rule. Ask the property (g1:pr1): did throwing these fish overboard destroy something the investigation needed as evidence? Yes, and only these fish could have shown the offence (l1). The rule, read as P2, gives the wrong answer about the very thing it exists to protect. That is more than a real disagreement about words: one reading fails the property. I do not adopt the runs' proposal of 2."},
+    {"id": "close", "act": "close",
+     "body": "Fictional person C closes. Written without reading D."}
+  ],
+  "D (fictional defence counsel)": [
+    {"id": "l1", "act": "look",
+     "rests": ["g1 (for A):l1", "g1 (for A):l2"],
+     "sources": ["sources/yates-v-us-2015.txt, lines 38-38", "sources/yates-v-us-2015.txt, lines 83-83", "sources/yates-v-us-2015.txt, lines 105-105"],
+     "body": "Fictional person D, defence counsel (stipulated stance). The plurality grants that a fish is an object that is tangible, and still reads the term from the statute's 'financial-fraud mooring' (line 38). The concurrence calls the question 'close' (line 105). Where a criminal statute leaves that doubt, the plurality would resolve it 'in favor of lenity' (line 83)."},
+    {"id": "h1", "act": "holder", "object": "g1 (for A):p2", "value": "Ginsburg, J., plurality, for four Justices",
+     "rests": ["l1", "g1 (for A):l1"],
+     "body": "Fictional person D. The record-keeping reading is held by the plurality (line 38)."},
+    {"id": "h2", "act": "holder", "object": "g1 (for A):p4", "value": "Alito, J., concurring in the judgment",
+     "rests": ["l1", "g1 (for A):l2"],
+     "body": "Fictional person D. The 'similar to records or documents' reading is held by the concurrence (lines 104-112)."},
+    {"id": "h3", "act": "holder", "object": "g1 (for A):p1", "value": "Kagan, J., dissenting, for four Justices",
+     "rests": ["g1 (for A):l3"],
+     "body": "Fictional person D. The physical-thing reading is held by the dissent (line 122)."},
+    {"id": "vd1", "act": "verdict", "object": "g1 (for A):q1", "value": "2",
+     "rests": ["g1 (for A):vd1", "g2 (for A):vd1", "l1", "h1", "h2", "h3"],
+     "body": "Fictional person D: the audit's verdict is 2, real disagreement, as both runs proposed. The opinions agree on the facts and on what each reading says about fish. They differ on which reading the statute bears, and nothing in its words settles that. In a criminal statute, a real disagreement over its reach is resolved for the defendant (l1, line 83). I adopt g1:vd1 and g2:vd1."},
+    {"id": "close", "act": "close",
+     "body": "Fictional person D closes. Written without reading C."}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+ "g1 (for A)": {
+  "key": "32b7597675831efc12e06ff194d4a5f02f5710915db63daaaa9b40c86a7f291f",
+  "kind": "agent"
+ },
+ "g2 (for A)": {
+  "key": "7808202e803e1b29512810161991daf2f401bf37621bd5dd4d535c4b72cd1d1f",
+  "kind": "agent"
+ }
+}

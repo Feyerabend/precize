@@ -1,0 +1,10 @@
+{
+ "order": 1,
+ "trial": "Trials 1 and 2",
+ "sentence": "Bitcoin is money.",
+ "source": "A worked case in the manual (Saying What You Mean, §6.1): El Salvador after its 2025 reform, which kept bitcoin as legal tender in name but made accepting it voluntary.",
+ "about": "Everyone can agree on the facts about bitcoin and still disagree whether it is money. One reading is legal: money is what the law says must be accepted as payment. Another is practical: money is what people actually use to pay. After the reform the two come apart.",
+ "setup": "One agent run audited the sentence and stopped where the card says a person must take over. The author, as person A, then wrote which reading A goes by and accepted the norm the run had found. A second run checked the sentence against what A had accepted.",
+ "outcome": "The first run proposed that the legal reading had been hollowed out rather than repealed. The second found the sentence true by the letter, but the property the norm relies on is no longer delivered. A person later withdrew the acceptance under a check, and the run's conclusion fell with it, as the record says it should.",
+ "taught": "The rules held and refused only real mistakes (10). Free-text objects let a disagreement hide (17), which led to matching quotes by their words."
+}

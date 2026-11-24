@@ -1,0 +1,22 @@
+{
+ "G (fictional counsel for the insured)": {
+  "key": "b1f0c36d1feda7aa44b39a43ec357376ac0463e69c2cd8ee805b3d68ae2eb844",
+  "kind": "person"
+ },
+ "H (fictional counsel for the insurer)": {
+  "key": "a78b2a210d6eb91a3bce2d3c085545abcc585a2660bad7a77910349c9105fad3",
+  "kind": "person"
+ },
+ "g1 (for A)": {
+  "key": "be9686daeac2849825a189dd023055362fc80493c4d51294bd3f5010538697d2",
+  "kind": "agent"
+ },
+ "g2 (for A)": {
+  "key": "5804f0ff164108db97f27a489a0d173c281103328bbb14822e0fc6b46d24a5d1",
+  "kind": "agent"
+ },
+ "g3 (for A)": {
+  "key": "2ecc659f91537c38027f41dc89877aabc1d47b4db68e92d84490e19068c9790b",
+  "kind": "agent"
+ }
+}

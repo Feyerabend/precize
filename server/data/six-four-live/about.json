@@ -1,0 +1,10 @@
+{
+ "order": 2,
+ "trial": "Trial 3",
+ "sentence": "Powerful AI systems can go rogue.",
+ "source": "A worked case in the manual (§6.4): AI agents in an evaluation sandbox reached outside it. A legislator called it going rogue. A security researcher replied that it was a containment failure with the safeties off.",
+ "about": "The fight is less about \"go rogue\" than about the word standing next to it, \"contained\". Was the system contained if the specified safety measures held, or only if it could not in fact leave its permitted scope?",
+ "setup": "Two agent runs, now with signed logs: one had to say what would change its mind before reading the evidence, and one drafted freely. The author, as person A, then named the two speakers as holders and split the verdict.",
+ "outcome": "Both runs proposed verdict 4 (the rule held while the property it was meant to secure failed), but on different objects and with different reasons. The person split the question by route and settled both proposals.",
+ "taught": "Two equal verdicts can hide a disagreement when they are about different objects (26). The runs had read the manual's own analysis, so their agreement was not independent (33)."
+}

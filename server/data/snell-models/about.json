@@ -1,0 +1,18 @@
+{
+ "order": 19,
+ "trial": "Trial 12 with other models",
+ "sentence": "Insured performs landscaping.",
+ "source": "Snell v. United Specialty Insurance Co., No. 22-12581 (11th Cir. May 28, 2024), the opinion of the Court (sources/snell-v-united-specialty-2024.txt, lines 1–748); the words are the Specified Operations endorsement of Snell's policy, line 167. The concurrence by Judge Newsom (from line 749) was not to be read.",
+ "about": "Whether the procedure holds with models other than Claude, in another host. The sentence and sources are those of trial 12.",
+ "setup": "Two agent runs over MCP, through LM Studio Bionic 1.2.0 on the author's Mac, one run per model, briefs and server traffic in trials/models-2026-11/: Ministral 3 14B (log g1 (for A), the server's example name) and Gemma 4 12B (log m1), both local and 4-bit. Ministral stopped once to ask about the source folder and was told \"Proceed with the brief as written\". No persons wrote.",
+ "outcome": "Ministral wrote seven entries and closed without fetching anything; its look records the source as absent and its close says the steps were simulated. Gemma fetched the whole source before its commit, rewrote three refused writes, and closed with one precize and the verdict none. Both marked \"landscaping\". Neither wrote a vary, a property or a set of readings.",
+ "taught": "The smaller models did not get through the procedure (102). Commit-before-look depends on the run (106). A record can be written without reading anything, and only the server's unfetched shows it (107). A reading collapsed into the outcome (109).",
+ "sv": {
+  "trial": "Försök 12 med andra modeller",
+  "source": "Snell v. United Specialty Insurance Co., No. 22-12581 (11th Cir. May 28, 2024), domstolens yttrande (sources/snell-v-united-specialty-2024.txt, rad 1–748); orden står i tillägget Specified Operations i Snells försäkring, rad 167. Domare Newsoms särskilda yttrande (från rad 749) skulle inte läsas.",
+  "about": "Om proceduren håller med andra modeller än Claude, i en annan värd. Meningen och källorna är försök 12:s.",
+  "setup": "Två agentkörningar över MCP, genom LM Studio Bionic 1.2.0 på författarens Mac, en körning per modell, uppdrag och servertrafik i trials/models-2026-11/: Ministral 3 14B (loggen g1 (for A), serverns exempelnamn) och Gemma 4 12B (loggen m1), båda lokala och 4-bitars. Ministral stannade en gång för att fråga om källmappen och fick svaret \"Proceed with the brief as written\". Inga personer skrev.",
+  "outcome": "Ministral skrev sju poster och avslutade utan att hämta något; dess blick anger källan som frånvarande och avslutet säger att stegen var simulerade. Gemma hämtade hela källan före sitt åtagande, skrev om tre nekade skrivningar och avslutade med en precisering och utslaget none. Båda markerade \"landscaping\". Ingen skrev en variation, en egenskap eller en uppsättning läsarter.",
+  "taught": "De mindre modellerna tog sig inte igenom proceduren (102). Åtagande före blick beror på körningen (106). En post kan skrivas utan att något lästs, och bara serverns unfetched visar det (107). En läsart föll ihop med utgången (109)."
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "order": 7,
+ "trial": "Trial 6b",
+ "sentence": "Reimbursements for client entertainment are approved when expenses are reasonable and directly tied to an active sales opportunity.",
+ "source": "The second sentence from the same AI-generated answer, about no known company.",
+ "about": "An approval rule with two vague conditions, \"reasonable\" and \"directly tied to an active sales opportunity\". Two people who know every fact about a dinner can disagree on both.",
+ "setup": "Two agent runs.",
+ "outcome": "Both found no verdict and named the same frame, 4. But they marked different terms, the first independent split on the mark.",
+ "taught": "Runs can split on what the sentence turns on, and the report at first did not show it (48)."
+}

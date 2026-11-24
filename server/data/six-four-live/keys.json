@@ -1,0 +1,14 @@
+{
+ "A": {
+  "key": "0cc32f5f5566217e4a7937cb9e1699bbf34f0d5e59a235145429279fa878319a",
+  "kind": "person"
+ },
+ "g1 (for A)": {
+  "key": "f291cf1880b967ee851767410d2ad768c5853010783d92e06f12969370fbe9ad",
+  "kind": "agent"
+ },
+ "g2 (for A)": {
+  "key": "4bc334290a997aa97e0d080c87dcc286755b91886eac6cab13fadcf1e6390ac8",
+  "kind": "agent"
+ }
+}

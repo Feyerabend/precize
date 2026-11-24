@@ -1,0 +1,65 @@
+{
+ "_note": "Two fictional persons in the audit of T0, \"Some steps in the procedure need a person.\" Their stances are stipulated, not anyone's judgement. They write independently: neither cites the other. E shows the nescio and the decide; F shows an interpreter who says which reading E goes by, which E does not confirm. The letters E and F are new: A-D are personas of earlier trials, and the agent's run g1 was set up for A, the real author, before the trial was turned to personas.",
+ "E (fictional author)": [
+  {
+   "id": "h1",
+   "act": "holder",
+   "value": "g1 (for A):S3",
+   "object": "E (fictional author)",
+   "rests": [
+    "g1 (for A):S3"
+   ],
+   "body": "Fictional person E, the author of T0 (stipulated stance). By \"Some\" E means the steps named in the sentences that follow: holder and settle. E knows this reading and holds it."
+  },
+  {
+   "id": "n1",
+   "act": "holder",
+   "value": "nescio",
+   "object": "E (fictional author)",
+   "rests": [
+    "g1 (for A):P2",
+    "g1 (for A):P4"
+   ],
+   "body": "Fictional person E. Asked whether these steps need a person because only a person can perform them (P2) or because someone must answer for them afterwards (P4), E cannot say. Both were in mind when the sentence was written, and nothing in the draft tells them apart. E sees both readings clearly and still does not know which was meant."
+  },
+  {
+   "id": "n2",
+   "act": "holder",
+   "value": "nescio",
+   "object": "E (fictional author)",
+   "rests": [
+    "g1 (for A):R2",
+    "g1 (for A):R3"
+   ],
+   "body": "Fictional person E. Whether \"a person\" is the particular person the step concerns (R2) or any named signer (R3), E cannot say. For a holder entry the two coincide; for a settle they come apart. E leaves this open."
+  },
+  {
+   "id": "d1",
+   "act": "decide",
+   "value": "g1 (for A):P4",
+   "object": "E (fictional author)",
+   "rests": [
+    "g1 (for A):P4"
+   ],
+   "answers": [
+    {
+     "ref": "E (fictional author):n1"
+    }
+   ],
+   "body": "Fictional person E decides to mean P4 from now on. Under P2 the sentence is a thesis about what the acts are, which the paper does not argue; under P4 it says what the record keeps, a name that answers for the step. This is a choice made now, not a report of what was meant when the sentence was written."
+  }
+ ],
+ "F (fictional reviewer)": [
+  {
+   "id": "h1",
+   "act": "holder",
+   "value": "g1 (for A):P2",
+   "object": "E (fictional author)",
+   "rests": [
+    "g1 (for A):P2",
+    "g1 (for A):q1"
+   ],
+   "body": "Fictional person F, a reviewer of the draft (stipulated stance). F reads the sentence after \"Who decided?\" as saying that only a person can perform these acts at all, and takes that to be the reading the author goes by. F has not asked the author."
+  }
+ ]
+}

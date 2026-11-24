@@ -1,0 +1,94 @@
+The procedure on one sheet
+
+From Saying What You Mean (Lonnert 2026), Appendix A.
+
+0  Write T₀ exactly as uttered. Quotation marks. No repairs.
+   No exact wording → stop. You have no object.
+
+1  Mark the vague term.
+   Test: could two speakers who know every fact still disagree?
+   Then, of the sentence: holding every word to one sense,
+   can it still be taken two ways?  If so, mark the sentence
+   and ask which reading was meant — the cheapest repair here.
+   Nothing marked → the disagreement is about the world. Stop.
+
+1b Vary the term. Discrete readings → take all of them.
+   Continuum → both extremes, and the case at hand.
+   Never confine yourself to readings you find plausible.
+   True under all      → vagueness is idle. Stop; look
+                          elsewhere.
+   False under all     → T₀ is false on EVERY reading.
+                          Stop, and report it in that form.
+                          Try it on your OBJECTION too, not
+                          just truth. Holds throughout →
+                          your objection is not about
+                          the vagueness.
+   Truth value varies  → continue.
+
+2  Precize the TERM, not the sentence.
+       P₁ ≺ w , P₂ ≺ w          then    val(T₀ | P₁) , val(T₀ | P₂)
+   Never P ≺ T₀.  Narrow it where it stands, in T₀.
+
+3  Write each reading out in full.
+   Instance test: what would you count as an instance?
+   Explanation test: can you explain it step by step?
+   Clerk's test: could a clerk apply it tomorrow,
+     asking you nothing?
+   Then the filter: WHO reads it this way? Name nobody → off
+   the list.  Two readings alone license no verdict.
+
+4  Two vague terms → grid, not list. Enumerate all four cells
+   BEFORE looking at which are occupied. The two positions in
+   circulation are usually a diagonal.
+
+5  Name the property, as a question about one case.
+   No property → constitutive → no divergence here. Look at the
+   proxy term standing next to it.
+
+6  Look for: rule applied FAITHFULLY and CORRECTLY, verdict about
+   the property WRONG. Nothing less counts.
+   Ask the parties which reading each goes by. Do not guess.
+
+7  Verdict, one of five, in a sentence, with the case:
+   1a pseudo-disagreement    1b pseudo-agreement
+   2 real disagreement   3 equivocation
+   4 rule–property divergence   5 pseudo-alternatives
+   None of the five fits → say so and describe what you have.
+   The list is open. §6.1 found a precization hollowed out
+   rather than repealed, and none of the five fit it.
+   No case → print the frame and say the finding is absent.
+   Every verdict ends: on what has been said so far.
+
+Then the argument the sentence was a premise in:  N ⊕ F ⇒ A
+
+1  Quote A exactly, in the arguer's words.
+2  Recover N. The WEAKEST one that delivers A, not the most
+   attackable. Often decided here. Get it GRANTED before you
+   attack what follows: am I right that you rely on this?
+3  Precize N and F separately. Run steps 0-7 above on each.
+4  Drift? F true under its own precization — does it satisfy
+   N's antecedent under N's?
+5  Quantifiers? Some in the evidence, all in the conclusion?
+6  Decorative-premise test: would the conclusion change if F
+   were false? If no, stop auditing facts and argue the norm.
+7  Scope? Is F established of the thing A acts on?
+8  Means? Is A one instrument among several N does not rank?
+9  Name which check failed. Then repair it if you can.
+
+And before you publish, the six norms:
+   1 Quote what you are answering.
+   2 Say which reading you are attacking.
+   3 Name the property before arguing about the rule.
+   4 Do not offer two readings as if they were all.
+   5 Say what would change your mind, before you look.
+   6 Say who pays for the precision you are demanding.
+
+The symbols on this sheet, in English:
+   ⟦T⟧         every reading T could be given, taken together
+   ext(P)      the cases reading P covers. Not the same object
+   P ≺ w       P is a precization of w — fewer readings, no new ones
+   P₁ ⊥ P₂     incompatible. ext(P₁) ∩ ext(P₂) = ∅, that is:
+               nothing counts as both. ∩ is what two collections
+               share, ∅ is the collection with nothing in it
+   val(T₀|P)   the truth value of T₀, read under P
+   N ⊕ F ⇒ A   norm plus fact, neither droppable, therefore action

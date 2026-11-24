@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "audit-record": {
+      "command": "/path/to/mcp-audit/.venv/bin/python",
+      "args": ["/path/to/mcp-audit/server.py"],
+      "env": {"AUDIT_DATA": "/path/to/mcp-audit/data"}
+    }
+  }
+}

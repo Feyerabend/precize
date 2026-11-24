@@ -1,0 +1,18 @@
+{
+ "order": 11,
+ "trial": "Trial 9",
+ "sentence": "Utbildningen ska vila på vetenskaplig grund och beprövad erfarenhet.",
+ "source": "The Swedish Education Act (skollagen 2010:800), chapter 1, section 5: \"Education shall rest on a scientific basis and proven experience.\" Run again after the server was told that a connective can be marked (finding 64).",
+ "about": "The word \"och\" (and) can mean that every part of education rests on both, on either or both, or that education as a whole rests on the two together. In trial 7 the runs put this to a person as a question with two options and left out \"either or both\".",
+ "setup": "Two agent runs, writing in Swedish, with trial 7's briefs, which say nothing about \"och\". No persons.",
+ "outcome": "Both runs marked \"och\" first, listed both, either or both, and the whole together, and each added a fourth reading. Both found the sentence true or false depending on the reading. They proposed different frames: none, frame 1b, and none, frame 3.",
+ "taught": "The new instructions were enough: the connective was marked and fully read without a hint (66). The report at first did not compare the two verdicts, because one quote also quoted the amendment note and the report took the first quoted passage (65); it now takes the longest. The runs agree on the readings and still split on the frame, as in trial 7 but not the same way (67).",
+ "sv": {
+  "trial": "Försök 9",
+  "source": "Skollagen (2010:800) 1 kap. 5 § tredje stycket. Kört igen sedan servern fått veta att ett konnektiv kan markeras (fynd 64).",
+  "about": "\"Och\" kan betyda att varje del av utbildningen vilar på båda, på den ena eller båda, eller att utbildningen som helhet vilar på de två tillsammans. I försök 7 ställde körningarna detta som en fråga till en person med två alternativ, och \"den ena eller båda\" saknades.",
+  "setup": "Två agentkörningar, som skrev på svenska, med försök 7:s instruktioner, som inte nämner \"och\". Inga personer.",
+  "outcome": "Båda körningarna markerade \"och\" först, angav båda, den ena eller båda, och helheten tillsammans, och lade var och en till en fjärde läsart. Båda fann att meningen är sann eller falsk beroende på läsart. De föreslog olika ramar: ingen dom, ram 1b, och ingen dom, ram 3.",
+  "taught": "De nya instruktionerna räckte: konnektivet markerades och lästes fullt ut utan ledtråd (66). Rapporten jämförde först inte de två domarna, eftersom ett citat också citerade ändringsnoteringen och rapporten tog det första citerade stycket (65); nu tar den det längsta. Körningarna är eniga om läsarterna men oeniga om ramen, som i försök 7 men inte på samma sätt (67)."
+ }
+}
