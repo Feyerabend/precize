@@ -37,8 +37,10 @@ def quoted_words(body: str) -> str | None:
 
 
 def marked_words(e) -> str:
-    """The words a mark marks: its value, or else the first passage its body quotes."""
-    w = e.value or quoted_words(e.body or "") or ""
+    """The words a mark marks: its value, or else the first passage its body quotes. A
+    value that quotes its words and their context ('"or" in "the widow, widower, or
+    children"') marks the first passage it quotes (finding 111)."""
+    w = (e.value and (quoted_words(e.value) or e.value)) or quoted_words(e.body or "") or ""
     return _norm(w).lower().strip(" \"'“”‘’.,;:")
 
 

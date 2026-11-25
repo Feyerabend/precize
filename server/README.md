@@ -1,8 +1,8 @@
 # audit-record
 
 A small MCP server for the audit record described in the paper *Who saw what*, after
-*Saying What You Mean* and Volume IV of *A Calculus of Representation*. A prototype: it
-computes the reports of the hand tests, and nothing has been proved.
+*Saying What You Mean* and Volume IV of *A Calculus of Representation*. A prototype:
+it computes the reports of the hand tests, and nothing has been proved.
 
 - `audit/`: the library. `record.py` holds entries, logs (one JSON Lines file per author,
   hash-chained), the write-time rules, merging and forks. `reports.py` computes the
@@ -20,7 +20,7 @@ computes the reports of the hand tests, and nothing has been proved.
 The acts follow the card. Sixteen do the audit, and three keep the record.
 
 | Act | What it records | Must cite |
-|---|---|---|
+|-----|-----------------|-----------|
 | `quote` | the sentence, exactly as uttered | a source passage |
 | `mark` | the word the sentence turns on | a quote |
 | `precize` | one reading of the word, with cases | the mark, reading or look it narrows |

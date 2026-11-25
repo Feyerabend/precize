@@ -1242,6 +1242,64 @@ as written"; nothing else was said to any run.
   the verbatim check, `unfetched` and the commit-first check alike. Open counts in every
   live audit are unchanged. `tests/test_fixes_107.py`. 124 tests pass.
 
+## The fourteenth trial again, after the fixes (`desylva-or-2`, 2026-11-25)
+
+The De Sylva sentence again, in a new audit, to try live three fixes no trial had run:
+the region rule for the grid (97), one verdict per set of marks with `between` (98), and
+the listing of late commits (106). The briefs were those of trial 14, except that the runs
+were told the sentence had been audited before in `desylva-or` and not to read it, nor
+`FINDINGS.md`, `trials/` or `out/`. They were not told what the fixes were. A first start
+went wrong: the sessions opened at the repository root, where no `.mcp.json` registers the
+server, and both stopped before writing anything, as the server's absence left them no
+tool. They were started again in `mcp-audit/`.
+
+Both runs knew the case, said so before reading further (g1 in its commit, g2 in its first
+mark), and their memory held. Both marked the first "or" and "children" again, and not the
+second "or" (96 stands). Both listed order of enumeration among the readings of "or" (95 is
+fixed); g1 kept four readings, g2 three. Both proposed 2 twice, each with `between`, one
+verdict per marked word. Nothing is open. 124 tests pass.
+
+111. **A mark's value holding its context is read whole.** g2 wrote its marks' values as
+     `"or" in "the widow, widower, or children"`. `marked_words` takes the value as it
+     stands, so g2's marked words were the whole phrase, which holds both of g1's marks as
+     whole words. The report then listed all four marks under `marks_differ` and paired
+     each of g2's marks with each of g1's under `marks_nested`, "or" with "children"
+     included. Worse, `between` compares two verdicts only when their readings belong to
+     the same marked words, so g1's V1 and g2's vd1, both between class and order on "or",
+     were not compared. They agree, so nothing showed; changed in memory to 2 against 1,
+     the report found nothing open. With the value's first quoted passage taken as the
+     marked words, the marks agree, nothing nests, and the changed pair is open. g1 left
+     the value empty and quoted the word first in the body, which the server reads right.
+112. **The region rule held where a run placed holders.** g1 placed the widow as a region,
+     the cells where she takes alone, with her arguments in the order she gives them (P2,
+     then Q1), placed the District Court, the Court of Appeals, the Court and the
+     concurrence as cells, and wrote that with a region in play the diagonal test does not
+     apply. That is the rule as the instructions give it, from the instructions alone. g2
+     wrote its grid before its looks, placed nobody, and named the rule only as what would
+     hold if a party argued in the alternative. The two grids no longer disagree on the
+     widow (97), but only one placed her.
+113. **One verdict per disagreement, unprompted.** Both runs used `between` without being
+     told of it: g1 V1 (class against order) and V2 (legitimate children against
+     state-law heirs), g2 vd1 and vd2 on the same pairs. In trial 14 both runs found 1b
+     inside the majority, between the Court and the concurrence on "children"; here the
+     second verdict went to the petitioner against the Court, and g1 noted the Court
+     against the concurrence as a possible 1b and gave it no value. So `between` let each
+     run give two verdicts, and each chose the pair the parties argued.
+114. **No commit was late, and none is listed.** Both runs wrote their commits before
+     fetching past lines 72–83, and the fetch log agrees, so `committed_after_reading` is
+     empty, as it should be. The listing has been seen live only in old logs (snell-models,
+     six-four-live), not on a run that wrote a late commit while the fix was in. The three
+     commits stay pending: the looks that cite them confirm them, and the report has no act
+     for that (99).
+
+### Fixed
+
+- **111.** `audit/reports.py`: a mark's value that puts its words in quotation marks
+  marks the first passage it quotes, as a body does; a value without quotation marks is
+  taken whole, as before. In `desylva-or-2` the marks of the two runs now agree, nothing
+  nests, and nothing is open; the verdicts on "or" and on "children" are compared run
+  against run. No other live audit changes. `tests/test_fixes_111.py`. 128 tests pass.
+
 ## Not done yet
 
 `close` beyond refusing writes after it, `ask` and `show` as a protocol between servers, a
