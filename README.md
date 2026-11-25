@@ -33,7 +33,7 @@ Porter 2019) at length. FINDINGS.md still describes the trial, and the two tests
 read its logs skip.
 
 The full paper, *Who saw what: An audit record where agents stop and people decide*, is
-deposited on Humanities Commons: doi:[to come].
+deposited on Humanities Commons: [doi:10.17613/vpv2r-1z781](https://doi.org/10.17613/vpv2r-1z781).
 
 ## License
 
