@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who Saw What: Live Agent</title>
+<link rel="stylesheet" href="../playground/style.css">
+<link rel="stylesheet" href="live.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>Who saw what <span>a live agent</span></h1>
+    <nav>
+      <a class="navlink" href="../playground/">The playground (recorded trials)</a>
+    </nav>
+    <button id="help-btn" class="ghost" aria-expanded="false">The card</button>
+  </div>
+</header>
+
+<aside id="help" hidden>
+  <div class="wrap">
+    <p>The procedure on one sheet, from <em>Saying What You Mean</em>, Appendix A. The agent
+    gets this card, the server's instructions and the tool descriptions, word for word.</p>
+    <pre id="card"></pre>
+  </div>
+</aside>
+
+<main class="wrap">
+
+<section id="intro">
+  <h2>Run an agent on a sentence of your own</h2>
+  <p class="lead">Give a text and the sentence in it you want audited. An agent, a Claude
+  model called with your own API key, audits the sentence by the card: it quotes it, marks
+  the word it turns on, commits to what would change its mind, reads the text, spells out
+  the readings and proposes a verdict. It stops where a person is needed. Then it is your
+  turn, in the playground.</p>
+  <ul class="plain">
+    <li><b>Your key stays in this page.</b> It is held in memory only, never stored, and
+      sent only to <code>api.anthropic.com</code>. Reload the page and it is gone.</li>
+    <li><b>It costs money.</b> Each turn is billed to your key. A run is typically 20 to 40
+      turns. Set a turn limit below, and stop the run at any time.</li>
+    <li><b>The rules are the server's.</b> The agent writes through the same checks as the
+      MCP server, ported to JavaScript: it may not write a holder, grant, settle or decide;
+      words it puts in quotation marks, in an entry that cites what it fetched, must be in that text (an entry that cites nothing is not checked); a look must not cite what it read before its
+      commit. What is refused is shown, with the rule.</li>
+    <li><b>Your text goes to the model.</b> Only what the agent fetches with <code>read</code>
+      is sent, a slice at a time, but do not paste what you would not send to an API.</li>
+  </ul>
+</section>
+
+<section id="setup">
+  <h3>1 The key and the model</h3>
+  <div class="row">
+    <label>Anthropic API key
+      <input id="key" type="password" autocomplete="off" spellcheck="false" placeholder="sk-ant-…"></label>
+    <label>Model
+      <select id="model">
+        <option value="claude-opus-5-5">Claude Opus 5.5</option>
+        <option value="claude-sonnet-5-5">Claude Sonnet 5.5</option>
+        <option value="claude-haiku-5-5">Claude Haiku 5.5</option>
+      </select></label>
+    <label>Effort
+      <select id="effort">
+        <option value="high">high</option>
+        <option value="medium">medium</option>
+        <option value="low">low</option>
+      </select></label>
+    <label>Turn limit
+      <input id="max-turns" type="number" min="1" max="200" value="40"></label>
+  </div>
+  <p class="hint">Opus and Sonnet are called with server-side fallbacks on: if the model is
+  overloaded, the API may answer with another model, and the run says which.</p>
+
+  <h3>2 The text</h3>
+  <p class="hint">One or more documents. The agent reads them by name and line number, as
+  it reads files on the server. The first holds the sentence. Plain text works best; LaTeX
+  is read with and without its markup.</p>
+  <div id="docs"></div>
+  <div class="controls">
+    <button id="add-doc">Add a document</button>
+    <button id="example">Load the example</button>
+    <label class="check"><input type="file" id="file" accept=".txt,.md,.tex,text/plain" multiple> </label>
+  </div>
+
+  <h3>3 The sentence</h3>
+  <div class="row">
+    <label>Line of T₀ in the first document
+      <input id="line" type="number" min="1" value="1"></label>
+    <label class="grow">T₀, the sentence under audit
+      <input id="sentence" spellcheck="false"></label>
+  </div>
+  <p class="hint">Filled in from the line; cut it down to the sentence if the line holds more.</p>
+
+  <h3>4 The run</h3>
+  <div class="row">
+    <label>Your name in the record
+      <input id="person" value="V" maxlength="40"></label>
+    <label>The run
+      <select id="role">
+        <option value="evidence">the evidence run: commits, then reads and looks</option>
+        <option value="drafting">the drafting run: varies and precizes, names a property</option>
+      </select></label>
+    <label>Language of the entries
+      <select id="lang">
+        <option value="en">English</option>
+        <option value="sv">Swedish</option>
+      </select></label>
+  </div>
+  <details class="brief-box">
+    <summary>The brief the agent gets</summary>
+    <pre id="brief"></pre>
+  </details>
+  <div class="controls">
+    <button id="start" class="primary">Start the run</button>
+    <button id="stop" disabled>Stop</button>
+    <span id="status" class="muted"></span>
+  </div>
+  <div id="setup-error" class="refusal" hidden></div>
+</section>
+
+<section id="run" hidden>
+  <h2>The run</h2>
+  <div class="stats" id="stats"></div>
+  <div class="columns two">
+    <div class="col">
+      <h3>The log <small id="log-name"></small></h3>
+      <div id="entries"><p class="muted">No entries yet.</p></div>
+    </div>
+    <div class="col">
+      <h3>What the agent did <small>tool calls and what it said</small></h3>
+      <div id="trace"></div>
+    </div>
+  </div>
+  <div id="done" class="line" hidden>
+    <h3>The agent has stopped</h3>
+    <div id="summary"></div>
+    <p>Now it is a person's turn: say who holds a reading, which you go by, or that you
+    cannot tell, and give the audit's verdict. The playground takes the run as a case.</p>
+    <div class="controls">
+      <button id="to-playground" class="primary">Take your turn in the playground</button>
+      <button id="dl-run">Download the run</button>
+      <button id="dl-transcript">Download the transcript</button>
+    </div>
+    <p class="hint">The run file holds the log, its public key and what the agent fetched.
+    The playground loads it again later (Choose a case, Load a run). The transcript is every
+    message sent to and from the model.</p>
+  </div>
+</section>
+
+</main>
+
+<script src="prompt.js"></script>
+<script src="../playground/audit.js"></script>
+<script src="ledger.js"></script>
+<script src="tools.js"></script>
+<script type="module" src="agent.js"></script>
+</body>
+</html>

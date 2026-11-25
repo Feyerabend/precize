@@ -1,0 +1,28 @@
+/* Additions to ../playground/style.css for the live page. */
+#intro, #setup, #run { margin: 1rem 0; }
+#setup .row, .row { display: flex; gap: .8rem; flex-wrap: wrap; align-items: end; }
+#setup .row label { flex: 1; min-width: 12rem; }
+#setup .row label.grow { flex: 3; }
+#setup .row input, #setup .row select { width: 100%; display: block; margin-top: .2rem; }
+.doc { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: .6rem .8rem; margin: .5rem 0; }
+.doc .doc-head { display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; }
+.doc .doc-head input { flex: 1; min-width: 10rem; font-family: var(--mono); font-size: .85rem; }
+.doc textarea { min-height: 10rem; font-family: var(--mono); font-size: .82rem; line-height: 1.4; margin-top: .4rem; }
+.doc .n { font-size: .8rem; color: var(--muted); }
+.brief-box { margin: .8rem 0; }
+.brief-box pre { white-space: pre-wrap; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: .6rem .8rem; font-size: .8rem; }
+a.navlink { color: var(--muted); font-size: .9rem; text-decoration: none; padding: .35rem .6rem; }
+a.navlink:hover { color: var(--accent); }
+.columns.two { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+.stats { display: flex; gap: 1.2rem; flex-wrap: wrap; margin: .4rem 0 .8rem; }
+.stats div { font-size: .85rem; color: var(--muted); }
+.stats b { display: block; font-size: 1.3rem; color: var(--ink); font-family: var(--serif); }
+.step { border-left: 3px solid var(--line); padding: .3rem .6rem; margin: .4rem 0; font-size: .86rem; }
+.step.say { border-color: var(--accent); white-space: pre-wrap; overflow-wrap: anywhere; }
+.step.tool code { font-size: .8rem; }
+.step.tool .out { color: var(--muted); font-family: var(--mono); font-size: .76rem; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 9rem; overflow: auto; margin-top: .2rem; }
+.step.refused { border-color: var(--warn); background: var(--warn-soft); }
+.step.refused b { color: var(--warn); }
+.step.sys { border-color: var(--muted); color: var(--muted); font-style: italic; }
+#summary ul { margin: .3rem 0; padding-left: 1.1rem; font-size: .92rem; }
+@media (max-width: 600px) { #setup .row label { min-width: 100%; } }

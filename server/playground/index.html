@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who Saw What: Playground</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>Who saw what <span>a playground</span></h1>
+    <nav id="steps">
+      <button data-go="start" class="on">1 Start</button>
+      <button data-go="choose">2 Choose a case</button>
+      <button data-go="watch">3 Watch the agents</button>
+      <button data-go="turn">4 Your turn</button>
+      <button data-go="report">5 The report</button>
+    </nav>
+    <button id="help-btn" class="ghost" aria-expanded="false">The card</button>
+  </div>
+</header>
+
+<aside id="help" hidden>
+  <div class="wrap">
+    <p>The procedure on one sheet, from <em>Saying What You Mean</em>, Appendix A, as the
+    server gives it to an agent. T₀ is the sentence under audit and <i>w</i> the word marked
+    in it. Step 1b, varying, is not verdict 1b.</p>
+    <pre id="card"></pre>
+  </div>
+</aside>
+
+<main class="wrap">
+
+<section id="start" class="view on">
+  <h2>An audit where agents stop and people decide</h2>
+  <p class="lead">A sentence turns on a word, and two careful readers take the word two
+  ways. Agents built on language models can do much of the work of finding that out. They
+  quote the sentence, mark the word, list its readings, look things up and propose what
+  kind of disagreement it is. Some steps they may not take. To say <em>who</em> holds a
+  reading is a claim about people. To settle what a law means is a judgement. Those are
+  left to a person, and here the person is you.</p>
+
+  <div class="how">
+    <div><b>1</b><h3>Choose a case</h3><p>Each case is a real audit from the trials in
+      the paper: a statute, a court case, a sentence from an AI answer. Two agent runs,
+      blind to each other, audited it.</p></div>
+    <div><b>2</b><h3>Watch the agents</h3><p>Step through what each run wrote, entry by
+      entry, with what each kind of entry means. The agents stop at the line.</p></div>
+    <div><b>3</b><h3>Take your turn</h3><p>Say who holds a reading, which reading you go
+      by, or that you cannot tell. Give your own verdict. The record refuses what breaks its
+      rules, and says why.</p></div>
+    <div><b>4</b><h3>Read the report</h3><p>What stands, what fell, and what is open is
+      computed from the entries, yours included. Save it as a PDF and keep your signed log.</p></div>
+  </div>
+
+  <h3>How the record works</h3>
+  <ul class="plain">
+    <li><b>Each author writes to their own log.</b> An agent run is an author; so are you.
+      An entry is never edited. To take something back you write a withdrawal.</li>
+    <li><b>Every entry names what it rests on.</b> When an entry is withdrawn, what rests
+      on it falls with it, and the report shows the chain.</li>
+    <li><b>Some acts need a person.</b> Holder, grant, settle and decide are refused from an
+      agent. An agent's verdict is only a proposal.</li>
+    <li><b>The report is computed, never stored.</b> Two claims by different authors about
+      the same thing, with different values, are open until a person settles them.</li>
+    <li><b>Entries are signed.</b> This page makes you a key (Ed25519) in your browser and
+      signs each entry you write. The key never leaves the page.</li>
+  </ul>
+  <p class="note">Nothing you write leaves your browser. If you reload the page, your key and
+  your entries are gone, so download your log before you leave. The entries and the report
+  are the same as the server's: a log written here loads in the server, signatures and all.</p>
+  <p><button class="primary" data-go="choose">Choose a case</button></p>
+</section>
+
+<section id="choose" class="view">
+  <h2>Choose a case</h2>
+  <p>Each card is one audit from the trials. The sentence is the one the agents audited.</p>
+  <div id="cases" class="cases"></div>
+  <p class="hint">Ran an agent on your own text in the <a href="../live/">live page</a>?
+  Load its run file here: <input type="file" id="load-run" accept=".json,application/json">
+  <span id="load-status" class="refusal-inline"></span></p>
+</section>
+
+<section id="watch" class="view">
+  <div class="case-head" id="watch-head"></div>
+  <div class="controls">
+    <button id="prev">Back</button>
+    <span id="step-label"></span>
+    <button id="next" class="primary">Next entry</button>
+    <button id="all">Show all</button>
+    <label class="check"><input type="checkbox" id="long"> Show whole texts</label>
+  </div>
+  <p class="hint">A reference such as <code>g1:vd1</code> names one entry: the log
+  (<code>g1</code>, the first agent run) and the entry's id in it. Click a reference to see
+  the entry it names.</p>
+  <div id="columns" class="columns"></div>
+  <div id="line" class="line" hidden></div>
+</section>
+
+<section id="turn" class="view">
+  <div class="case-head" id="turn-head"></div>
+  <div class="me">
+    <label>Your name in the record
+      <input id="me-name" value="V (visitor)" maxlength="60"></label>
+    <button id="me-key" class="primary">Make my key</button>
+    <span id="me-status" class="muted"></span>
+  </div>
+  <div id="acts" class="acts" hidden>
+    <div class="tabs" id="act-tabs"></div>
+    <form id="act-form" class="act-form"></form>
+    <div id="refusal" class="refusal" hidden></div>
+    <h3>Your entries</h3>
+    <div id="mine" class="mine"><p class="muted">None yet.</p></div>
+    <p><button class="primary" data-go="report">See the report</button></p>
+  </div>
+</section>
+
+<section id="report" class="view">
+  <div class="case-head" id="report-head"></div>
+  <div class="controls">
+    <label class="check"><input type="checkbox" id="with-persons"> Include the persons
+      who wrote in the trial</label>
+    <button id="print" class="primary">Save as PDF</button>
+    <button id="dl-log">Download my log</button>
+    <button id="dl-keys">Download my public key</button>
+  </div>
+  <div id="report-body"></div>
+</section>
+
+</main>
+
+<div id="print-area"></div>
+
+<script src="trials.js"></script>
+<script src="audit.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1300,6 +1300,42 @@ verdict per marked word. Nothing is open. 124 tests pass.
   nests, and nothing is open; the verdicts on "or" and on "children" are compared run
   against run. No other live audit changes. `tests/test_fixes_111.py`. 128 tests pass.
 
+## A live run in the browser (`live/`, 2026-11-25)
+
+The live page (`live/`) on its example: the allotment rules, T₀ at line 15, "Members shall
+not keep animals or poultry on their plot unless the committee agrees", and the committee
+minutes. The author ran it with their own key: Opus 5.5 at effort high, the evidence run,
+16 turns, 29 entries. The run marked "animals" and "unless the committee agrees", wrote both
+commits before fetching past line 15, then marked the scope of "unless" after reading,
+precized three readings of each mark, varied, gridded, named a property (pr3, constitutive),
+asked for Plot 9's letter (a1, left open) and proposed 1a between P3a and P3b. Three writes
+were refused: the first under the log name `g1` (the agent then used `g1 (for V)`), and two
+for verbatim: L1 quoted the rules but cited only the minutes, and L4 lowercased "The". Both
+were corrected on the next turn. The agent named as unclear the log name, whether an `ask`
+may be about a sentence other than T₀ (it may), whether one verdict goes per set of marks
+(98: per disagreement, with `between`) and the finding below.
+
+115. **Verbatim checks only an entry that cites what was fetched.** `fetch.check` checks
+     quotation marks only in an agent entry with `sources`, all of them fetched. Of the
+     run's entries, 20 put words in quotation marks and cited nothing, among them every
+     precize and the verdict, and none was checked. Five quote words that are not in either
+     text: c2 "in writing, before", m3, P3a and P3c "shall not ... unless the committee
+     agrees", with an ellipsis, and v2 a test phrase of its own. None is a misquotation of
+     the record, but the paper said that words an agent puts in quotation marks must be in
+     the text it fetched, word for word, and the page said "quoted words must be in what it
+     read". Both overstated the rule. Checking every agent body against all fetched text
+     would refuse an ellipsis, a scare quote and a test phrase, which are how a vary or a
+     mark is written, so the rule stays and the wording is changed.
+
+### Fixed
+
+- **115.** The live page and `live/README.md` now say that quoted words are checked in an
+  entry that cites what was fetched, and that an entry citing nothing is not. The paper's
+  sentence is changed by the author.
+- **The log name.** The live brief now gives the log name with its parentheses, and `read`
+  under another log is refused (rule `name`) and not recorded, as a fetch counts only for
+  the log it is made under. `live/check.mjs` checks both; 25 checks pass.
+
 ## Not done yet
 
 `close` beyond refusing writes after it, `ask` and `show` as a protocol between servers, a
