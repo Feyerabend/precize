@@ -24,19 +24,52 @@ the Claude API directly and runs the tools itself.
 
 ## Running it
 
-The page needs `../playground/` next to it, so serve the folder above:
+The page needs `../playground/` next to it, so serve the folder above `live/`. From that
+folder:
 
 ```bash
-cd mcp-audit && python3 -m http.server 8766 --bind 127.0.0.1
+make live
 ```
 
-Then open http://127.0.0.1:8766/live/. Opening `index.html` as a file does not work: the
-browser blocks the module and the API call from `file://`.
+It serves the folder at http://127.0.0.1:8766/ (`PORT=8800 make live` for another port) and
+opens `/live/`; Ctrl-C stops it. Without make: `python3 -m http.server 8766 --bind
+127.0.0.1`. Opening `index.html` as a file does not work: the browser blocks the module and
+the API call from `file://`.
 
 To try it without a text of your own, press **Load the example**. It loads two short
 fictional texts in `examples/`: an allotment society's rules, where line 15 reads
 "Members shall not keep animals or poultry on their plot unless the committee agrees", and
 committee minutes that bear on how far "unless" reaches.
+
+`examples/regeringsbildning/` holds three real texts to paste in, in Swedish, all from
+riksdagen.se (fetched 26 November 2026; statutes and official notices are free to copy):
+
+1. `regeringsformen-6kap.txt`, the Instrument of Government, chapter 6, one paragraph per
+   line. It goes first. Line 26 is the sentence: "Har riksdagen fyra gånger förkastat
+   talmannens förslag, ska förfarandet avbrytas och återupptas först sedan val till
+   riksdagen har hållits."
+2. `talmannen-2026-10-29.txt`, the Speaker's notice and opening words of 29 October 2026,
+   on why Elisabeth Thand Ringqvist was put to a vote.
+3. `riksdagen-notiser-nov-2026.txt`, the notices of 3 November (the vote) and 24 November
+   (Ulf Kristersson proposed).
+
+Set the line to 26 (check that the sentence field changes), the entries to Swedish and the
+run to the evidence run.
+
+## From a downloaded run to a PDF
+
+**Download the run** saves the log and what was read, not the texts. `torecord.mjs` writes
+the run as an audit folder, as the server writes it, rebuilding what was fetched from the
+documents; `render` then makes the report:
+
+```bash
+make pdf RUN=~/Downloads/live-run.json DOCS=live/examples/regeringsbildning NAME=regeringsbildning
+```
+
+This gives `out/regeringsbildning.pdf` and `out/regeringsbildning.sv.pdf`, with the audit
+folder in `out/runs/regeringsbildning/`. `DOCS` must hold the documents under the names the
+page gave them: a pasted document is called `source.txt`, `document-2.txt` and so on, so copy
+the texts under those names if you pasted them.
 
 ## What the agent gets
 
@@ -116,7 +149,8 @@ the hashes and signatures, and give the same report, `unfetched` and
 | `export.py` | Reads `server.py` (without running it) and `card.txt`, writes `prompt.js` |
 | `live.css` | Additions to `../playground/style.css` |
 | `check.mjs` | The test above |
-| `examples/` | The two fictional example texts |
+| `torecord.mjs` | A downloaded run as an audit folder, for `render`: `make pdf RUN=… DOCS=… NAME=…` |
+| `examples/` | The two fictional example texts, and `regeringsbildning/`, three texts from riksdagen.se |
 
 ## What it is not
 
@@ -124,10 +158,10 @@ the hashes and signatures, and give the same report, `unfetched` and
   `check.mjs`, but the server stays the reference. A log written here loads in the server.
 - One agent log per run. Several runs, and logs from other people, are for the server.
 - It reads only the documents given, by name and line. It does not fetch from the web.
-- It does not render the record as the paper's appendix does; for that, load the log in the
-  server and use `render`.
+- It does not render the record as the paper's appendix does; for that, use `make pdf`
+  (above) or load the log in the server and use `render`.
 
-## An example of what the server makes of a run
+## Two examples of what the server makes of a run
 
 `data/live-allotment/` is one run of the example, downloaded from the page and written as
 the server writes it: the log, its public key and what was fetched (Claude Opus 5.5, effort
@@ -142,3 +176,13 @@ No person wrote in it, so the report shows the agent's part alone: the marks, th
 written before the reading, the readings, the looks and what is absent, the grid, a question
 for V, and a verdict shown as proposed, which no person has answered. The rows for holders,
 grants and the audit's verdict are what V would fill in the playground.
+
+`data/live-regeringsbildning/` is a run on the three texts from riksdagen.se, on line 26
+(Claude Opus 5.5, effort high, the evidence brief, entries in Swedish, 12 turns, 20 entries).
+The agent marked "fyra gånger" and "val till riksdagen", committed before reading on, wrote
+three readings of each, and found that the Riksdag's notice ("sammanlagt fyra förslag") and
+the Speaker both count as the first reading, while nothing in the texts says whether the
+count starts again with a new procedure. Since no reading reaches four rejections in the
+case, both varies came out the same and it proposed "none" for each mark. The log cites the
+documents as `source.txt`, `document-2.txt` and `document-3.txt`, the names the page gave
+them; the report is `out/live-regeringsbildning.pdf` and `.sv.pdf`.

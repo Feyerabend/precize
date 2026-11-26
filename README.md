@@ -25,7 +25,9 @@ record comes from *A Calculus of Representation*, vol. IV.
   and can be made again; see `server/README.md`. `live-allotment.pdf` is the report of a
   single run of the live agent page (`server/live/`) on two short fictional texts, with no
   person writing: it shows what the server makes of an agent's part alone, up to a verdict
-  that is only proposed.
+  that is only proposed. `live-regeringsbildning.pdf` is a run on three texts from
+  riksdagen.se, in Swedish, on the rule that four rejected proposals for prime minister
+  force an extra election (Regeringsformen 6:5), during the 2026 government formation.
 
 The findings and the trial notes were written in the author's working tree. Where they point
 to `../manual/`, `../paper/` or `../sources/`, those files are not in this repository. The

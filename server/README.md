@@ -96,5 +96,6 @@ written in the page back into Python. The page leaves out what needs fetched tex
 Claude API key, kept in the page's memory only. The agent gets the server's instructions,
 tool descriptions and card, word for word, and writes through the same checks, ported to
 JavaScript; it stops where a person is needed, and the run goes to the playground for the
-person's turn. Serve this folder (`python3 -m http.server 8766`) and open `/live/`. See
-`live/README.md`; `node live/check.mjs` checks the port against the Python record.
+person's turn. `make live` serves this folder and opens `/live/`, and `make pdf` turns a
+downloaded run into a report; see `live/README.md`, and the `Makefile` for the rest.
+`node live/check.mjs` checks the port against the Python record.
