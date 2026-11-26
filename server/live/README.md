@@ -126,3 +126,19 @@ the hashes and signatures, and give the same report, `unfetched` and
 - It reads only the documents given, by name and line. It does not fetch from the web.
 - It does not render the record as the paper's appendix does; for that, load the log in the
   server and use `render`.
+
+## An example of what the server makes of a run
+
+`data/live-allotment/` is one run of the example, downloaded from the page and written as
+the server writes it: the log, its public key and what was fetched (Claude Opus 5.5, effort
+high, the evidence brief, 16 turns, 29 entries). `about.json` adds the case box. The server
+renders it as any trial (`out/live-allotment.pdf`, and `.sv.pdf` with Swedish labels):
+
+```bash
+.venv/bin/python -m audit.render data/live-allotment out
+```
+
+No person wrote in it, so the report shows the agent's part alone: the marks, the commits
+written before the reading, the readings, the looks and what is absent, the grid, a question
+for V, and a verdict shown as proposed, which no person has answered. The rows for holders,
+grants and the audit's verdict are what V would fill in the playground.

@@ -22,7 +22,10 @@ record comes from *A Calculus of Representation*, vol. IV.
   See `server/README.md` to run it.
 - `examples/`: the report of each trial in `server/data/`, rendered to PDF in English and in
   Swedish (`.sv.pdf`), and `guide.pdf`, on how to read a report. They are made from the logs
-  and can be made again; see `server/README.md`.
+  and can be made again; see `server/README.md`. `live-allotment.pdf` is the report of a
+  single run of the live agent page (`server/live/`) on two short fictional texts, with no
+  person writing: it shows what the server makes of an agent's part alone, up to a verdict
+  that is only proposed.
 
 The findings and the trial notes were written in the author's working tree. Where they point
 to `../manual/`, `../paper/` or `../sources/`, those files are not in this repository. The
